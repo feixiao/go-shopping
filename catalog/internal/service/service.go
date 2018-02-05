@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/autodidaddict/go-shopping/catalog/proto"
+	"github.com/feixiao/go-shopping/catalog/proto"
 	"github.com/micro/go-micro/errors"
 	"golang.org/x/net/context"
 )

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/autodidaddict/go-shopping/api/internal/platform/config"
-	"github.com/autodidaddict/go-shopping/api/internal/service"
+	"github.com/feixiao/go-shopping/api/internal/platform/config"
+	"github.com/feixiao/go-shopping/api/internal/service"
 	"github.com/emicklei/go-restful"
 	"github.com/micro/go-micro/client"
 	"github.com/micro/go-web"

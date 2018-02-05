@@ -2,9 +2,9 @@ package service
 
 import (
 	stderrors "errors"
-	"github.com/autodidaddict/go-shopping/catalog/proto"
-	"github.com/autodidaddict/go-shopping/shipping/proto"
-	"github.com/autodidaddict/go-shopping/warehouse/proto"
+	"github.com/feixiao/go-shopping/catalog/proto"
+	"github.com/feixiao/go-shopping/shipping/proto"
+	"github.com/feixiao/go-shopping/warehouse/proto"
 	"github.com/emicklei/go-restful"
 	"github.com/micro/go-log"
 	"github.com/micro/go-micro/client"

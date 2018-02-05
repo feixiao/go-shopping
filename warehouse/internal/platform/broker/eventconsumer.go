@@ -1,7 +1,7 @@
 package broker
 
 import (
-	"github.com/autodidaddict/go-shopping/shipping/proto"
+	"github.com/feixiao/go-shopping/shipping/proto"
 	"github.com/micro/go-log"
 	"github.com/micro/go-micro/broker"
 	"github.com/micro/protobuf/proto"

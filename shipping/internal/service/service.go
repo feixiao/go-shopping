@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/autodidaddict/go-shopping/shipping/proto"
+	"github.com/feixiao/go-shopping/shipping/proto"
 	"github.com/micro/go-micro/errors"
 	"golang.org/x/net/context"
 	"time"

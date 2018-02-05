@@ -10,6 +10,7 @@ type catalogService struct {
 	catalogRepo catalogRepository
 }
 
+// 接口获取产品以及目录信息
 type catalogRepository interface {
 	GetProduct(sku string) (product *catalog.Product, err error)
 	GetCategories() (categories []*catalog.ProductCategory, err error)
@@ -22,10 +23,11 @@ type catalogRepository interface {
 // NewCatalogService creates a new catalog service
 func NewCatalogService(catalogRepo catalogRepository) catalog.CatalogHandler {
 	return &catalogService{
-		catalogRepo: catalogRepo,
+		catalogRepo: catalogRepo, 	// CatalogService 基于catalogRepository接口实现
 	}
 }
 
+// GetProductDetails 获取产品的详细信息，基于rpc请求
 func (c *catalogService) GetProductDetails(ctx context.Context, request *catalog.DetailRequest,
 	response *catalog.DetailResponse) error {
 

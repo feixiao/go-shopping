@@ -17,10 +17,10 @@ func main() {
 	log.SetLevel(log.DebugLevel)
 
 	svc := grpc.NewService(
-		micro.Name(config.ServiceName),
+		micro.Name(config.ServiceName),				// 微服务的名字
 		micro.RegisterTTL(time.Second*30),
-		micro.RegisterInterval(time.Second*10),
-		micro.Version(config.Version),
+		micro.RegisterInterval(time.Second*10),		// 重新注册的时间间隔
+		micro.Version(config.Version),				// 微服务上报的版本信息
 	)
 	svc.Init()
 

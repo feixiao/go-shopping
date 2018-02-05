@@ -6,7 +6,7 @@ import (
 	"github.com/garyburd/redigo/redis"
 )
 
-// CatalogRepository is a Redis-backed product catalog repository
+// CatalogRepository is a Redis-backed product catalog repository 产品目录存储库
 type CatalogRepository struct {
 	redisDialString string
 }
